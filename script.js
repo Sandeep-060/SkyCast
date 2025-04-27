@@ -139,7 +139,7 @@ async function fetchWeatherAndForecast(url) {
   }
   finally {
     const searchSection = document.querySelector('.search-section');
-    const offset = -350; 
+    const offset = -200; 
     window.scrollTo({
       top: searchSection.offsetTop - offset,
       behavior: 'smooth'
