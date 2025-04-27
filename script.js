@@ -137,9 +137,15 @@ async function fetchWeatherAndForecast(url) {
   } catch (error) {
     console.error("Error:", error.message);
   }
-  finally{
-    document.querySelector('.total-forecast').scrollIntoView({ behavior: 'smooth' })
+  finally {
+    const searchSection = document.querySelector('.search-section');
+    const offset = -350; 
+    window.scrollTo({
+      top: searchSection.offsetTop - offset,
+      behavior: 'smooth'
+    });
   }
+  
 }
 
 async function getData() {
