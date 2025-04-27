@@ -132,6 +132,7 @@ async function fetchWeatherAndForecast(url) {
     
     const forecastResponse = await fetch(forecastUrl);
     const forecastData = await forecastResponse.json();
+    clearOldData();
     container.append(createForecast(forecastData));
 
   } catch (error) {
