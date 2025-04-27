@@ -30,9 +30,8 @@ body{
   padding: 10px;
   border-bottom: 3px solid #eee;
 }
-.logo h3,.sky {
+.logo h1,.sky {
   font-weight: 600;
-  font-size: 1.3rem;
   color: #0072ff;
 }
 
